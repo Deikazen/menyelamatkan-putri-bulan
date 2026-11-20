@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://b5fk2fggux8cm"]
+
+[ext_resource type="Script" uid="uid://drepow0acd180" path="res://scripts/PlayerAli.gd" id="1_crugn"]
+[ext_resource type="Texture2D" uid="uid://dbgqfruoncpyi" path="res://icon.svg" id="2_piksp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c6lqs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_c6lqs"]
+radius = 88.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c6lqs"]
+
+[node name="PlayerAli" type="CharacterBody2D" unique_id=709254377]
+script = ExtResource("1_crugn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=399913459]
+shape = SubResource("RectangleShape2D_c6lqs")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1516823488]
+offset_top = 3.0
+offset_right = 40.0
+offset_bottom = 96.0
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=569621647]
+offset_left = 39.0
+offset_top = 26.0
+offset_right = 79.0
+offset_bottom = 99.0
+color = Color(0.2009717, 0.7623931, 1, 1)
+
+[node name="TamengVisual" type="Area2D" parent="." unique_id=1905429669]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TamengVisual" unique_id=2124594200]
+position = Vector2(43, 49)
+shape = SubResource("CircleShape2D_c6lqs")
+
+[node name="Sprite2D" type="Sprite2D" parent="TamengVisual" unique_id=1944073471]
+modulate = Color(1, 1, 1, 0.4)
+position = Vector2(45, 50)
+texture = ExtResource("2_piksp")
+
+[node name="BarDayaTahanTameng" type="ProgressBar" parent="." unique_id=72065468]
+offset_left = -10.0
+offset_top = -26.0
+offset_right = 53.0
+offset_bottom = 1.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_c6lqs")
+value = 100.0

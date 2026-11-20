@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dgt17u5sbng3q"]
+
+[ext_resource type="Script" uid="uid://der6xpi7n54k" path="res://scripts/putri_bulan.gd" id="1_i3wow"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c6lqs"]
+size = Vector2(46, 68)
+
+[node name="PutriBulan" type="Area2D" unique_id=919181212]
+script = ExtResource("1_i3wow")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1231171093]
+position = Vector2(59, 29)
+shape = SubResource("RectangleShape2D_c6lqs")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1583376735]
+offset_left = 33.0
+offset_top = -8.0
+offset_right = 83.0
+offset_bottom = 63.0
+color = Color(1, 1, 0, 1)
