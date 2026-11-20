@@ -1,5 +1,44 @@
 # Menyelamatkan Putri Bulan
 
+## Setup dan instalasi
+
+Panduan ini ditujukan untuk developer yang ingin menyiapkan dan menjalankan proyek secara lokal.
+
+### Prasyarat
+
+- **Godot Engine 4.7** atau versi Godot 4 yang kompatibel.
+- **Git** untuk meng-clone dan mengelola repository.
+- Sistem operasi Windows, Linux, atau macOS yang mendukung Godot dan Jolt Physics.
+
+Proyek menggunakan **GDScript**, **Jolt Physics**, renderer **Mobile**, dan Direct3D 12 sebagai driver Windows yang dikonfigurasi pada `project.godot`.
+
+### Clone repository
+
+```bash
+git clone https://github.com/Deikazen/menyelamatkan-putri-bulan.git
+cd menyelamatkan-putri-bulan
+```
+
+Jika repository sudah tersedia secara lokal, cukup buka folder `menyelamatkan-putri-bulan` sebagai project root.
+
+### Buka proyek di Godot
+
+1. Jalankan Godot Engine.
+2. Pilih **Import** atau **Add** pada Project Manager.
+3. Cari dan pilih file `project.godot` di root repository.
+4. Pilih **Import & Edit**.
+5. Godot akan membuat folder cache lokal `.godot/`. Folder ini sudah diabaikan Git dan tidak perlu dikomit.
+
+### Jalankan proyek
+
+Tekan `F6` untuk menjalankan scene aktif, atau `F5` untuk menjalankan proyek utama. Proyek dikonfigurasi agar membuka scene berikut ini:
+
+```text
+res://scenes/TestLevel.tscn
+```
+
+Jika Godot menampilkan pesan perubahan versi Engine saat pertama dibuka, gunakan versi Godot 4.7 atau import kembali dengan versi Godot 4 yang kompatibel.
+
 Prototipe game 2D berbasis Godot dengan misi menyelamatkan Putri Bulan. Pemain mengendalikan Ali, menghindari serangan yang bergerak dari kanan ke kiri, menggunakan tameng, lalu menyentuh Putri Bulan untuk menyelesaikan level.
 
 ## Status proyek
@@ -25,20 +64,6 @@ Bagian yang masih berupa placeholder atau belum selesai:
 - Belum ada sprite, animasi, audio, musik, efek partikel, menu utama, atau sistem level lanjutan.
 - Input `skill_1` sampai `skill_5` sudah didefinisikan di konfigurasi, tetapi belum memiliki tombol dan belum digunakan oleh gameplay.
 - Belum ada sistem skor, progres, penyimpanan, atau konfigurasi tingkat kesulitan.
-
-## Cara menjalankan
-
-1. Pasang Godot Engine 4.7 atau versi 4.x yang kompatibel.
-2. Buka folder proyek ini melalui Godot Project Manager.
-3. Jalankan proyek dengan **Run Project** atau tekan `F6`/`F5` sesuai kebutuhan.
-
-Scene utama yang dikonfigurasi proyek adalah:
-
-```text
-res://scenes/TestLevel.tscn
-```
-
-Resolusi viewport yang digunakan adalah `1280x720` dengan mode renderer **Mobile**.
 
 ## Kontrol
 
